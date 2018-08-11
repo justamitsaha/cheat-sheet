@@ -1,3 +1,4 @@
+#This is a kind of utility file used by me in day to day life basis things whcih I forget
 
 #<-------------------------BASIS UNIX Command--------------------------->
 touch README.md #create a file README.md in the directory where the command is run
@@ -30,8 +31,9 @@ sudo apt-get upgrade
 sudo apt-get install git
 #setting up new repositary in GIT
 get init
-get add #to add some files
-git commit # add files to local repository
+git add Link.sh  #to add some files
+git commit -m "sh file pushed"  # add files to local repository
+git push -u origin master
 
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"

@@ -43,3 +43,11 @@ git config --global user.name "Your Name"
 
 
 
+#<----------------Node------------------------------->
+# Download and setup the APT repository add the PGP key to the system’s APT keychain,
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt install npm
+
+node --version 
+npm --version

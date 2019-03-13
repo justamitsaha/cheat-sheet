@@ -19,5 +19,7 @@ git config --global user.name "Your Name"
 #to set your account's default identity.Omit --global to set the identity only in this repository.
 
 #for modification
-git add file name
+git status
+git add 'file name'
 git add .
+git commit -m "git"

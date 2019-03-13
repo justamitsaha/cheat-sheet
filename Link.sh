@@ -24,25 +24,6 @@ sudo apt-get install winehq-devel=3.13.0~bionic
 
 
 
-#<------------ GIT------------------------->
-# Install Git
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install git
-#setting up new repositary in GIT
-get init
-git add Link.sh  #to add some files
-git commit -m "sh file pushed"  # add files to local repository
-git push -u origin master
-
-git config --global user.email "you@example.com"
-git config --global user.name "Your Name"
-
-#to set your account's default identity.Omit --global to set the identity only in this repository.
-
-
-
-
 #<----------------Node------------------------------->
 # Download and setup the APT repository add the PGP key to the system’s APT keychain,
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -

@@ -1,6 +1,14 @@
 #install angular
 npm install -g @angular/cli
 
+#version
+ng --v
+
+# uninstall 
+npm uninstall -g @angular/cli
+npm install -g @angular/cli
+
+
 #create new app
 ng new custom-amit-app
 

@@ -1,5 +1,11 @@
 #<------------ GIT------------------------->
+
+git config --global http.proxy http://tms%5<LanID>:<password>@tfsproxy.tfs.toyota.com:80
+git config --system http.proxy http://tms%5<LanID>:<password>@tfsproxy.tfs.toyota.com:80
+
 git clone https://github.com/justamitsaha/mislaneous.git
+
+git config http.sslVerify false
 
 # Install Git
 sudo apt-get update

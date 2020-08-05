@@ -19,6 +19,9 @@ npm i
 cd custom-amit-app
 ng serve --o  #or
 ng serve --open
+# it may run into some issue in new Windows to resolve open powershell as administrator type 
+Get-ExecutionPolicy -List  # see policy list
+Set-ExecutionPolicy -Scope LocalMachine Unrestricted # to change policy
 
 #adding a component
 ng generate componenet header

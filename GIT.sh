@@ -30,28 +30,30 @@ git # Setting up initial configurations or users
 	git add .
 	git commit -m "adding details of commit"
 
-<-------------------------------------------------------->
 #setting up new repositary in GIT
 
-git init
-git add .
-git commit -m "RXJS tutorial first commit"
+	git init
+	git add .
+	git commit -m "RXJS tutorial first commit"
 ##create a repository
-git remote add origin https://github.com/justamitsaha/angularRxjsTutorial.git
+	git remote add origin https://github.com/justamitsaha/angularRxjsTutorial.git
 
-git push -u origin master
+	git push -u origin master
 
-#check current branch 
-git branch
-#switches to new branch
-git checkout <existing_branch>
+#Shows a list of branch
+	git branch
+#switches to different branch
+	git checkout <existing_branch>
 #switches and create new branch
-git checkout -b <new_branch>
+	git checkout -b <new_branch>
 #clone different branch
-git clone -b <branch name> <repo_uri>
+	git clone -b <branch name> <repo_uri>
+
+#push the changes to remote
+	git push origin <branch name>
 
 #undo git add
-git reset <file>
+	git reset <file>
 
 
 

@@ -54,6 +54,7 @@ git # Setting up initial configurations or users
 
 #stach
 	git stash
+	git stash pop
 
 #undo git add
 	git reset <file>

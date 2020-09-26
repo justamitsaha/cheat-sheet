@@ -40,7 +40,7 @@ git # Setting up initial configurations or users
 
 	git push -u origin master
 
-#Shows a list of branch
+#Shows a list of branchs
 	git branch
 #switches to different branch
 	git checkout <existing_branch>

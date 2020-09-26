@@ -52,6 +52,9 @@ git # Setting up initial configurations or users
 #push the changes to remote
 	git push origin <branch name>
 
+#stach
+	git stash
+
 #undo git add
 	git reset <file>
 

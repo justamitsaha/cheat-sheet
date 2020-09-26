@@ -22,7 +22,7 @@ git # Setting up initial configurations or users
 	git clone https://github.com/justamitsaha/mislaneous.git
 
 #after making changes
-	it status			# this is show the list of modified changes
+	git status			# this is show the list of modified changes
 
 # for adding files
 
@@ -32,6 +32,26 @@ git # Setting up initial configurations or users
 
 <-------------------------------------------------------->
 #setting up new repositary in GIT
+
+git init
+git add .
+git commit -m "RXJS tutorial first commit"
+##create a repository
+git remote add origin https://github.com/justamitsaha/angularRxjsTutorial.git
+
+git push -u origin master
+
+#check current branch 
+git branch
+#switches to new branch
+git checkout <existing_branch>
+#switches and create new branch
+git checkout -b <new_branch>
+#clone different branch
+git clone -b <branch name> <repo_uri>
+
+#undo git add
+git reset <file>
 
 
 

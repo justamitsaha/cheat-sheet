@@ -13,13 +13,17 @@ SELECT user,authentication_string,plugin,host FROM mysql.user;
 #add a password to user
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'richa123';
 
-
+service mysql status
+service mysql start
+service mysql stop
 
 # CHECK IF MY SQL IS RUNNING OR NOT
 ps -ef | grep mysqld
 
 #login to db
 mysql -u root -p
+
+
 
 SHOW DATABASES;
 
@@ -58,6 +62,21 @@ INSERT INTO MOVIE_MASTER (MOVIE_NAME, DESCRIPTION, MOVIE_YEAR, GENRE, IMDB_RATIN
 '9.3',
 '90',
 'https://cdn.telanganatoday.com/wp-content/uploads/2019/08/The-Shawshank-Redemptiony.jpg');
+
+# create users in data base
+
+CREATE USER <USENAME> @<HOST> IDENTIFIED BY <PASSWPRD>;
+
+GRANT CREATE, DROP, DELETE, INSERT, SELECT, UPDATE <DB_NAME>TO <USENAME>@<HOST>;
+
+# <HOST> CAN BE localhost, certain IP or * eg 
+
+CREATE USER 'amit' @localhost IDENTIFIED BY 'amit123';
+GRANT CREATE, DROP, DELETE, INSERT, SELECT, UPDATE ON MOVIE_MASTER TO 'amit'@'localhost';
+FLUSH PRIVILEGES;
+
+# to test
+mysql -u amit -p
 
 
 

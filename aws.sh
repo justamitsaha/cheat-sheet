@@ -9,3 +9,9 @@ systemctl status httpd.service
 systemctl enable httpd.service
 
 curl localhost:80
+
+
+#aws cli
+aws configure
+ls ~/.aws
+cat ~/.aws/config

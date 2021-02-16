@@ -16,5 +16,16 @@ cat index.html #read a file
 
 cat > index.html # create a file and update it press CTRL + D to save
 
+VIM
+command mode escape key
+: to open escape bar
+:w save(write)
+:w file_name rename and save as different file
+:q exit with out saving
+:qw save and exit
+
+
+
+
 
 

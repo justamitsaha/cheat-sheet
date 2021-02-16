@@ -23,3 +23,5 @@ $.ajax({
 }).always(function (data) {
   debugger;
 });
+
+SSH termial clolour RGB  48/10/36

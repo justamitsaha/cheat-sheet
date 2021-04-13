@@ -24,4 +24,4 @@ $.ajax({
   debugger;
 });
 
-SSH termial clolour RGB  48/10/36
+SSH termial clolour RGB  48/10/36 or  #300A24

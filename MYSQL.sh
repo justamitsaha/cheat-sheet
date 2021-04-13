@@ -4,7 +4,7 @@ sudo apt update
 sudo apt install mysql-server
 sudo mysql_secure_installation
 
-#richa123
+#dev_user2123
 
 #uninstall sql server
 sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*;
@@ -19,7 +19,7 @@ SELECT user,authentication_string,plugin,host FROM mysql.user;
 
 #Alter user add a password to user will not work if logged in with other user who doesn't have CREATE USER privilege(s)
 #also below command is required to allow root login without sudo as it adds password to user table
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'richa123';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yoyoyo_password';
 
 service mysql status
 service mysql start
@@ -79,17 +79,17 @@ GRANT CREATE, DROP, DELETE, INSERT, SELECT, UPDATE <DB_NAME>TO <USENAME>@<HOST>;
 
 # <HOST> CAN BE localhost, certain IP or * eg 
 
-CREATE USER 'amit'@'192.168.0.100' IDENTIFIED BY 'amit123';
+CREATE USER 'dev_user'@'192.168.0.100' IDENTIFIED BY 'yoyoyo_password';
 USE MOVIE_MASTER;
-GRANT CREATE, DROP, DELETE, INSERT, SELECT, UPDATE ON MOVIE_MASTER TO 'amit'@'192.168.0.100';
+GRANT CREATE, DROP, DELETE, INSERT, SELECT, UPDATE ON MOVIE_MASTER TO 'dev_user'@'192.168.0.100';
 FLUSH PRIVILEGES;
 
 # to test
-mysql -u amit -p
+mysql -u dev_user -p
 
-CREATE USER 'richa'@'localhost' IDENTIFIED BY 'richa@123';
+CREATE USER 'dev_user2'@'localhost' IDENTIFIED BY 'yoyoyo_password';
 USE MOVIE_MASTER;
-GRANT CREATE, DROP, DELETE, INSERT, SELECT, UPDATE ON MOVIE_MASTER TO 'richa'@'localhost';
+GRANT CREATE, DROP, DELETE, INSERT, SELECT, UPDATE ON MOVIE_MASTER TO 'dev_user2123'@'localhost';
 FLUSH PRIVILEGES;
 
 

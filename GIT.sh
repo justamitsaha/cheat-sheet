@@ -11,8 +11,8 @@ git # Setting up initial configurations or users
 	git config --global user.email "you@example.com"
 	git config --global user.name "Your Name"
 
-	git config --global http.proxy http://tms%5<LanID>:<password>@tfsproxy.tfs.toyota.com:80
-	git config --system http.proxy http://tms%5<LanID>:<password>@tfsproxy.tfs.toyota.com:80
+	git config --global http.proxy http://username:passworrd@proxydomain.com:80
+	git config --system http.proxy http://username:passworrd@proxydomain.com:80
 
 	git config http.sslVerify false
 
@@ -58,6 +58,13 @@ git # Setting up initial configurations or users
 
 #undo git add
 	git reset <file>
+
+	git fetch origin --prune
+	git stash
+	git rebase origin master
+	git stash apply
+	
+
 
 
 

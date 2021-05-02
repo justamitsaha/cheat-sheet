@@ -51,6 +51,8 @@ $grep -A1 'learn' geekfile.txt
 -B n : Prints searched line and n line before the result.
 -C n : Prints searched line and n lines after before the result.
 
+ps -eaf                             #process running on a host
+
 
 
 

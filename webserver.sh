@@ -1,5 +1,5 @@
 <---------------nginx------------------->
-yum -y install nginx
+dnf -y install nginx
 apt -y install nginx
 
 service nginx status /systemctl status nginx 
@@ -13,3 +13,6 @@ service nginx stop /service nginx stop
 systemctl status httpd /service httpd status
 systemctl start httpd /service httpd start
 systemctl stop httpd /service httpd stop
+
+
+sudo chmod 777 /var/www/html -R

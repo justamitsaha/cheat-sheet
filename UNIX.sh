@@ -24,11 +24,14 @@ touch index.html # create a file
 
 VIM
 command mode escape key
+i to go into insert mode
 : to open escape bar
 :w save(write)
 :w file_name rename and save as different file
-:q exit with out saving
+:q normal exit
+:q! exit without saving
 :qw save and exit
+:u to undo
 
 grep # Global Search
 

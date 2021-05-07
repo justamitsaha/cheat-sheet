@@ -7,6 +7,9 @@ systemctl start nginx /service nginx start
 systemctl stop nginx /service nginx stop
 ps -ef|grep nginx
 sudo dnf remove nginx
+sudo nginx -t
+
+sudo chmod 777 /usr/share/nginx/html/amit -R
 
 
 <---------------apache------------------->

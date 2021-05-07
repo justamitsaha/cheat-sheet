@@ -6,10 +6,11 @@ systemctl status nginx /service nginx status
 systemctl start nginx /service nginx start
 systemctl stop nginx /service nginx stop
 ps -ef|grep nginx
-sudo dnf remove nginx
+sudo dnf -y remove nginx
 sudo nginx -t
 
 sudo chmod 777 /usr/share/nginx/html/amit -R
+sudo chmod 777 /etc/nginx/nginx.conf
 
 
 <---------------apache------------------->

@@ -56,6 +56,13 @@ $grep -A1 'learn' geekfile.txt
 
 ps -eaf                             #process running on a host
 
+/etc/hosts
+sudo chmod 777 /etc/hosts
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+0:0:0:0 amitsaha.com
+0:0:0:0 www.amitsaha.com
+
 
 
 

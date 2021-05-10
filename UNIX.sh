@@ -63,6 +63,8 @@ sudo chmod 777 /etc/hosts
 0:0:0:0 amitsaha.com
 0:0:0:0 www.amitsaha.com
 
+sudo chmod +x /etc/init.d/nginx  # setting executable permission
+
 
 
 

@@ -9,6 +9,11 @@ VOLUME /usr/share/nginx/html
 
 CMD ["nginx", "-g", "daemon off;"]
 
+#docker build . -t custom_nginx_img
+#docker  run -d --name webapp -p 80:80 custom_nginx_img
+#docker  run --name webapp -p 80:80 custom_nginx_img
+#docker run -i --volumes-from webapp --name mynginx4_files debian /bin/bash
+
 https://github.com/dockerfile/nginx/blob/master/Dockerfile
 
 <---------------------nginxCOnfig---------------------------->

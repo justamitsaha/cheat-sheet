@@ -1,10 +1,15 @@
-cd 
-sudo chmod 777 /usr/share/nginx/html
-mkdir /usr/share/nginx/html/docroot
-cp -r /home/mr-robot2/Downloads/amit/ /usr/share/nginx/html/docroot/
-cp -r /home/mr-robot2/Downloads/richa/ /usr/share/nginx/html/docroot/
-cd /etc/nginx
-chmod 7777 nginx.conf
+FROM nginx:1.20.0
+RUN rm /etc/nginx/conf.d/default.conf
+RUN chmod -R 777 /usr/share/nginx/html
+COPY /content /usr/share/nginx/html
+RUN chmod -R 777 /usr/share/nginx/html/docroot
+COPY index.html /usr/share/nginx/html
+COPY conf /etc/nginx
+VOLUME /usr/share/nginx/html
+
+CMD ["nginx", "-g", "daemon off;"]
+
+https://github.com/dockerfile/nginx/blob/master/Dockerfile
 
 <---------------------nginxCOnfig---------------------------->
 # For more information on configuration, see:

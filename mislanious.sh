@@ -25,3 +25,7 @@ $.ajax({
 });
 
 SSH termial clolour RGB  48/10/36 or  #300A24
+
+VS code short cuts
+Select a bunch of lines, then Shift + Alt/Option + I will put a cursor at the end of every selected line
+Select a word and press Shift + Cmd + L to select all instances of your selection

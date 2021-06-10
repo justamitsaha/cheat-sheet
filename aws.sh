@@ -1,12 +1,13 @@
 ssh -i EC2-AmitFirst.pem ec2-user@
 
-yum update -y #update without prompts
-
-yum install -y httpd.x86_64
-
-systemctl start httpd.service
-systemctl status httpd.service
-systemctl enable httpd.service
+#!/bin/bash
+# Use this for your user data (script from top to bottom)
+# install httpd (Linux 2 version)
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+echo "<h1>Hello World from $(hostname -f)</h1>" > /var/www/html/index.html
 
 curl localhost:80
 

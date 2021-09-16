@@ -1,0 +1,10 @@
+#storage driver
+Functipn of storage driver is maintain and store the list of images on host machine and enable container to write content on writable layer
+#default storge driver overlay2 others awfs devicemapper
+sudo ls -ltr /var/lib/docker/overlay2
+Suppose you want to change a config file which is in previous non writable layer SD will bubble up that file to top writable layer to be modified
+Any new file will stay on top writable layer
+
+You can see the layers using docker image history imageName
+
+How to change storage drivers?

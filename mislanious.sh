@@ -1,12 +1,11 @@
 
 #To Disable CORS in chrome
-chrome.exe--user - data - dir="C:/Chrome dev session" --disable - web - security
+C:\Program Files (x86)\Google\Chrome\Application chrome.exe--user - data - dir="C:/Chrome dev session" --disable - web - security
 
-var url = "http://localhost:8080/formattedGreetings";
+var url = "http://localhost:8080/richa/v1/rest/fetchAPI";
 
 var data = {
-  "id": 0,
-  "content": "HELLO"
+    "test": "Laura"
 };
 
 
@@ -29,3 +28,6 @@ SSH termial clolour RGB  48/10/36 or  #300A24
 VS code short cuts
 Select a bunch of lines, then Shift + Alt/Option + I will put a cursor at the end of every selected line
 Select a word and press Shift + Cmd + L to select all instances of your selection
+
+$WShell = New-Object -Com "Wscript.Shell"
+while (1) {$WShell.SendKeys("{SCROLLLOCK}"); sleep 60}

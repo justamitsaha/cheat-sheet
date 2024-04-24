@@ -31,3 +31,6 @@ Select a word and press Shift + Cmd + L to select all instances of your selectio
 
 $WShell = New-Object -Com "Wscript.Shell"
 while (1) {$WShell.SendKeys("{SCROLLLOCK}"); sleep 60}
+
+keycloack
+docker run -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:23.0.3 start-dev
